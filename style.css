@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #5eb9f0;
+  --paragraph-color: #60697b;
+  --heading-color: #343f52;
+  --skyblue: #e5f4fd;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-color: chartreuse;
+}
