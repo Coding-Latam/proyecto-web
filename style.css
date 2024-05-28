@@ -15,7 +15,7 @@ body {
 details {
   padding: 20px;
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 footer {
