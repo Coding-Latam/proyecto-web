@@ -15,7 +15,7 @@ body {
 details {
   padding: 20px;
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 footer {
@@ -77,20 +77,29 @@ nav {
 
   & ul {
     display: none;
-    position: absolute;
-    background-color: var(--primary-color);
 
-    top: 0;
-    left: 0;
-    height: 100vh;
-    /* display: flex; */
-    flex-direction: column;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
+    &.active {
+      display: flex;
+      position: absolute;
+      background-color: var(--primary-color);
+      top: 0;
+      left: 0;
+      height: 100vh;
+      flex-direction: column;
+      padding: 50px 0 20px;
+      text-align: center;
+      width: 100%;
+    }
 
     & a {
       color: var(--white);
+    }
+
+    & span {
+      font-weight: 600;
+      position: absolute;
+      right: 10px;
+      top: 20px;
     }
   }
 }
@@ -428,11 +437,19 @@ ul {
     }
   }
 
-  /* .nav-container {
+  .btn-nav {
+    display: none;
+  }
+
+  .nav-container {
     & ul {
       display: flex;
+
+      & a {
+        color: var(--paragraph-color);
+      }
     }
-  } */
+  }
 
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
